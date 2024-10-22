@@ -19,6 +19,7 @@ make all
 ### 编译镜像
 
 ```bash
+docker buildx build  --platform=linux/arm64 --build-arg TARGET_ARCH=arm64 --build-arg GOPROXY=https://goproxy.cn  --network host --output registry.insecure=true,type=image -t harbor.43.143.130.168.nip.io:30443/matrixdc-system/hami:v2.3.12-arm64-ascend910B-20241021  -f ./Dockerfile ./
 docker buildx build -t $IMAGE_NAME .
 ```
 

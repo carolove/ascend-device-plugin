@@ -1,5 +1,5 @@
 GO ?= go
-VERSION ?= unknown
+VERSION ?= v2.3.12-arm64-ascend910B-20241021
 BUILDARGS ?= -ldflags '-s -w -X github.com/Project-HAMi/ascend-device-plugin/version.version=$(VERSION)'
 
 all: ascend-device-plugin
